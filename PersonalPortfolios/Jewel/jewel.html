@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jewel</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="jewel.css">
+	<script src="jewel.js" defer></script>
+	<link rel="icon" type="image/jpg" href="./JewelAssets/faviconimage.jpg">
+</head>
+<body>
+	<header>
+		<!--Logo and Logo Text-->
+        <a href="#" class="logo-holder">
+			<div class="logo">J</div>
+			<div class="logo-text">Jewel's Portfolio</div>
+		</a>
+		<!--Navigation Bar-->
+        <nav>
+			<ul id="menu">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#skills">Skills</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="mailto:Example@gmail.com" class="button">Contact Me</a>
+				</li>
+			</ul>
+			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				</svg>
+			</a>
+		</nav>
+	</header>
+	
+    <main>
+		<!--Hero Section-->
+        <section class="hero container">
+			<div class="hero-blue">
+				<div>
+					<h1><small>Hi I'm</small>
+						Jewel Fredricks.
+					</h1>
+					<p>
+						Design and Developer in Kenya who creates web applications and websites. <span>I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days.</span>
+					</p>
+					<div class="call-to-action">
+						<a href="./JewelAssets/Sample_Resume_Template.pdf" class="button black">
+							View Resume
+						</a>
+						<a href="mailto:Example@gmail.com" class="button white">
+							Contact Me
+						</a>
+					</div>
+					<div class="social-links">
+						<a href="#">
+							<img src="./JewelAssets/github-2.png" alt="GitHub" width="48" />
+						</a>
+						<a href="#">
+							<img src="./JewelAssets/linkedin-2.png" alt="LinkedIn" width="48" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-yellow">
+				<img src="./JewelAssets/JewelProfilePic.JPG" alt="Jewel Fredricks" width="100%" />
+			</div>
+		</section>
+		
+        <!--Logos Section-->
+        <section class="logos container">
+			<div class="marquee">
+				<div class="track">
+					<img src="./JewelAssets/html.png" alt="HTML" width="128" />
+					<img src="./JewelAssets/css.png" alt="CSS" width="128" />
+					<img src="./JewelAssets/javascript.png" alt="JS" width="128" />
+					<img src="./JewelAssets/sass.png" width="128" alt="Sass" />
+					<img src="./JewelAssets/react.png" width="128" alt="React" />
+					<img src="./JewelAssets/nextjs.png" width="128" alt="Next JS" />
+					<img src="./JewelAssets/azure.png" width="128" alt="Azure" />
+					<img src="./JewelAssets/vscode.png" width="128" alt="VS Code" />
+					<img src="./JewelAssets/python.png" width="128" alt="Python" />
+					<img src="./JewelAssets/html.png" alt="HTML" width="128" />
+					<img src="./JewelAssets/css.png" alt="CSS" width="128" />
+					<img src="./JewelAssets/javascript.png" alt="JS" width="128" />
+					<img src="./JewelAssets/sass.png" width="128" alt="Sass" />
+					<img src="./JewelAssets/react.png" width="128" alt="React" />
+					<img src="./JewelAssets/nextjs.png" width="128" alt="Next JS" />
+					<img src="./JewelAssets/azure.png" width="128" alt="Azure" />
+					<img src="./JewelAssets/vscode.png" width="128" alt="VS Code" />
+					<img src="./JewelAssets/python.png" width="128" alt="Python" />
+				</div>
+			</div>
+		</section>
+		
+        <!--Skills Section-->
+        <section id="skills" class="skills container">
+			<h2>
+				<small>About Me</small>
+				Skills
+			</h2>
+			<div class="holder-blue">
+				<div class="left-column">
+					<h3>Frontend</h3>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>React</li>
+						<li>Angular</li>
+						<li>Vue</li>
+					</ul>
+					<h3>Backend</h3>
+					<ul>
+						<li>Node.js</li>
+						<li>Express</li>
+						<li>Python</li>
+						<li>Java</li>
+						<li>PHP</li>
+						<li>Ruby</li>
+					</ul>
+				</div>
+				<div class="right-column">
+					<h3>A bit about me</h3>
+					<p>
+						Hi I'm Jewel Fredricks, a designer and developer who aspires to make an impact in the tech industry.  I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days!
+					</p>
+					<p>
+						I'm always looking forward to learning more and to develop my skills in web design, web development, and many other tech prospects.
+					</p>
+				</div>
+			</div>
+		</section>
+		
+        <!--Work Experince section-->
+        <section class="work-experience container">
+			<h2>
+				<small>Recent</small>
+				Work Experience
+			</h2>
+			<div class="jobs">
+				<article>
+					<figure>
+						<div>
+							<img src="./JewelAssets/Workplace1.jpg" alt="Workplace 1" width="100%" />
+							<figcaption>
+								Workplace - 1 Content Creator
+							</figcaption>
+						</div>
+					</figure>
+					<h3>YouTube Content Creator</h3>
+					<div>2020-current</div>
+					<p>Content creation online using HTML, CSS, JS.</p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./JewelAssets/Workplace2.jpg" alt="Workplace 2" width="100%" />
+							<figcaption>
+								Workplace - 2 Digital Marketing
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Digital Marketing</h3>
+					<div>2018-2020</div>
+					<p>Marketing agency building websites and programming them from the ground up. </p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./JewelAssets/Workplace3.jpg" alt="Workplace 3" width="100%" />
+							<figcaption>
+								Workplace - 3 Chamber of Commerce
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Chamber of Commerce</h3>
+					<div>2013-2018</div>
+					<p>A small to large business organisation that helps facilitate advice and support.</p>
+				</article>
+				
+			</div>
+		</section>
+		
+        <!--Projects Section in a Bento-grid-->
+        <section id="projects" class="bento container">
+			<h2>
+				<small>
+					Previous
+				</small>
+				Completed Projects
+			</h2>
+			<div class="bento-grid">
+				<a href="#" class="bento-item">
+					<img src="./JewelAssets/onlineshoppingbento.webp" alt="Online Shopping" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./JewelAssets/lawbento.webp" alt="Law firm" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./JewelAssets/roadconstructionbento.jpg" alt="Road Construction" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./JewelAssets/restaurantbento.jpg" alt="Restaurant" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./JewelAssets/runningclubbento.jpg" alt="Running" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./JewelAssets/schoolbento.jpg" alt="School" width="100%" />
+				</a>
+			</div>
+		</section>
+		
+        <!--Chatbot Section-->
+        <section class="chatbot container">
+			<h2>
+				<small>
+					Talk to me
+				</small>
+				Chatbot
+			</h2>
+			<div class="chatbot-blue">
+				<div class="chat-info">
+					<h3>AI Chatbot</h3>
+					<p>I've put together a chatbot here which knows all my skills, work experience and has a copy of my CV/Resume. You can use it to ask questions about me to get a better idea of who I am and what I've done.</p>
+					<p>You can also download my resume here if you want to take a look at it.  I'm currently looking for new opportunities so if you have a project you think I'd be a good fit for, please get in touch!</p>
+					<a href="./JewelAssets/Sample_Resume_Template.pdf" class="button black">Download Resume</a>
+				</div>
+				<div class="chat-box">
+					<div class="scroll-area">
+						<ul id="chat-log">
+							<li>
+                                <span class="avatar bot">AI</span>
+                                <div class="message">
+                                    Hi, I'm a friendly chatbot that lets you interactive with this portfolio and CV. How can I help?
+                                </div>
+                            </li>
+                            <li>
+                                <span class="avatar user">User</span>
+                                <div class="message">
+                                    I have a question to ask you about this resume
+                                </div>
+                            </li>
+						</ul>
+					</div>
+					<div class="chat-message">
+						<input type="text" placeholder="Hey Jewel, what skills are you best at?">
+						<button class="button black">Send</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+    <footer>
+        <p>Copyright &#169; 2024 Jewel Fredricks. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

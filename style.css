@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Your gradient colors */
+    color: #333;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+header {
+    background-color: linear-gradient(to right, #ffafbd, #ffc3a0);
+    color: white;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.team-profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.profile {
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.profile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.profile-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 5px solid #3f51b5;
+    transition: filter 0.3s ease;
+}
+
+.profile:hover .profile-img {
+    filter: grayscale(50%);
+}
+
+.info {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #ff4081; /* Accent color */
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #ff6f91;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+footer {
+    background-color: linear-gradient(to right, #ffafbd, #ffc3a0);
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-profiles {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .profile-img {
+        height: 200px;
+    }
+
+    .profile {
+        padding: 10px;
+    }
+}

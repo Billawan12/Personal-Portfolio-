@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moses' Portfolio</title>
+    <link rel="stylesheet" href="moses.css">
+    <script defer src="moses.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!--Header-->
+    <header>
+        <img src="./MosesAssets/mosesprofilepic.jpeg" alt="Moses" class="profile-pic">
+        <h1>Moses</h1>
+        <p>Aspiring Software Engineer | Impactful Innovator</p> 
+    </header>
+    
+    <!--Part Containing the Sections-->
+    <div class="container">
+        
+        <!--About Me-->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I aim to create software solutions that leave a lasting impact. My focus is on building scalable, user-focused applications.</p>
+        </section>
+        
+        <!--Skills-->
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skill-grid">
+                <div class="skill">
+                    <i class="fab fa-java skill-icon"></i>
+                    <h3>Java</h3>
+                    <p>Scalable Applications</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-python skill-icon"></i>
+                    <h3>Python</h3>
+                    <p>Automation & AI</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-flutter skill-icon"></i>
+                    <h3>Flutter</h3>
+                    <p>Mobile App Development</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>Scalable Infrastructure</p>
+                </div>
+            </div>
+        </section>
+        
+        <!--Projects-->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="./MosesAssets/charityapp.jpg" alt="Charity App">
+                    <h3>Charity App</h3>
+                    <p>A Flutter-based app connecting donors with charities.</p>
+                    <a href="#"><i class="fas fa-link"></i> View Project</a>
+                </div>
+                <div class="card">
+                    <img src="./MosesAssets/AIChatbot.jpg" alt="AI Chatbot">
+                    <h3>AI Chatbot</h3>
+                    <p>Python chatbot for customer support.</p>
+                    <a href="#"><i class="fas fa-link"></i> View Project</a> 
+                </div>
+            </div>
+        </section>
+        
+        <!--Contact-->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+        </section>
+    </div>
+    
+    <!--Footer-->
+    <footer>
+        <p>Cpyright © 2024 Moses' Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,359 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffffff, #f7f7f7);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding: 4em 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0.5em 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ffe5d3;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 2rem;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 126, 95, 0.95);
+    padding: 0.5em 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffebda;
+}
+
+/* About Section */
+.about {
+    position: relative;
+    text-align: left;
+    padding: 3em;
+    margin: 2em auto;
+    max-width: 900px;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #333; /* Ensure text contrasts with the background */
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./MichelleAssets/flowerybackground.jpg') no-repeat center center/cover;
+    filter: brightness(60%);
+    z-index: -2;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(); /* Dark overlay for blending */
+    z-index: -1;
+}
+
+.about h2 {
+    color: #ff7e5f;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.about-content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    z-index: 1; /* Ensure content is above the overlay */
+}
+
+.about-profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.about-content p {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Skills Section */
+.skills {
+    background: linear-gradient(to right, #fff5eb, #ffebda);
+    padding: 2em 0;
+}
+
+.skills h2 {
+    text-align: center;
+    color: #ff7e5f;
+}
+
+.skills .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.skills .skill {
+    background: #fff;
+    text-align: center;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill i {
+    font-size: 3rem;
+    color: #ff7e5f;
+    margin-bottom: 0.5em;
+}
+
+/* Projects Section */
+.projects {
+    text-align: center;
+    padding: 2em;
+    background: white;
+}
+
+.projects .project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.projects .card {
+    background: #fef8f5;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.projects .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+/* Contact Section */
+.contact form {
+    max-width: 600px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact form button {
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+    background: #feb47b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 1.5em 0;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 1em;
+}
+
+.dark-mode-toggle:hover {
+    background: #feb47b;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #2c2c2c;
+    color: #f4f4f4;
+}
+
+body.dark-mode header {
+    background: linear-gradient(135deg, #333, #555);
+}
+
+body.dark-mode .dark-mode-toggle {
+    background: #555;
+    color: #f4f4f4;
+}
+
+body.dark-mode .navbar {
+    background: rgba(50, 50, 50, 0.9);
+}
+
+body.dark-mode .about, 
+body.dark-mode .skills, 
+body.dark-mode .testimonials, 
+body.dark-mode .projects, 
+body.dark-mode .contact form {
+    background: #3b3b3b;
+    color: #f4f4f4;
+}
+
+body.dark-mode .skills .skill,
+body.dark-mode .testimonials .testimonial,
+body.dark-mode .projects .card,
+body.dark-mode .stats .stat {
+    background: #444;
+    box-shadow: none;
+}
+
+body.dark-mode footer {
+    background: #333;
+    color: #f4f4f4;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: linear-gradient(to bottom, #f7f7f7, #ffffff);
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #ff7e5f;
+    margin-bottom: 1.5em;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.testimonial {
+    background: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+/* Stats Section */
+.stats {
+    background: #ff7e5f;
+    color: white;
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.stats h2 {
+    margin-bottom: 2em;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}

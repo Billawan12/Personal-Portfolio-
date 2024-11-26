@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanisha's Portfolio</title>
+    <link rel="stylesheet" href="tanisha.css">
+    <script defer src="tanisha.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">TANISHA🩷</div>
+        <div>
+            <ul class="nav-links">
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+            <li><a href="#testimonials"><i class="fas fa-comments"></i> Testimonials</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="hero">
+            <h1>Hi, I'm <span>Tanisha</span></h1>
+            <p>I specialize in <span class="dynamic-text"></span></p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <img src="./TanishaAssets/tanishaprofilepic.jpeg" alt="Tanisha's Profile Picture" class="about-profile-pic">
+            <p>
+                I'm a creative UI/UX designer and frontend developer passionate about crafting seamless digital experiences.
+                My expertise lies in bridging the gap between design and development to deliver intuitive user interfaces.
+                I love creating designs that not only look beautiful but also provide functionality and accessibility for
+                users.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills" class="skills">
+    <h1>Skills</h1>
+    <div class="skill-grid">
+        <div class="skill" data-tooltip="Advanced wireframing and prototyping">
+            <i class="fab fa-figma skill-icon"></i>
+            <h3>Figma</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill" data-tooltip="Building dynamic web applications">
+            <i class="fab fa-react skill-icon"></i>
+            <h3>React.js</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill" data-tooltip="Creating harmonious color schemes">
+            <i class="fas fa-palette skill-icon"></i>
+            <h3>Color Theory</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h1>My Projects</h1>
+        <div class="filter-buttons">
+            <button data-category="all" class="active">All</button>
+            <button data-category="web">Web</button>
+            <button data-category="design">Design</button>
+        </div>
+        <div class="project-cards">
+            <div class="card" data-category="web">
+                <img src="./TanishaAssets/personalPortfolio.jpeg" alt="Portfolio Website">
+                <h3>Portfolio Website</h3>
+                <p>A sleek personal portfolio showcasing my design and development skills.</p>
+            </div>
+            <div class="card" data-category="design">
+                <img src="./TanishaAssets/colortheoryguide.webp" alt="Color Theory Guide">
+                <h3>Color Theory Guide</h3>
+                <p>An interactive tool for designers to explore color combinations.</p>
+            </div>
+            <div class="card" data-category="web">
+                <img src="./TanishaAssets/tasktrackerapp.png" alt="Task Tracker App">
+                <h3>Task Tracker App</h3>
+                <p>Built with React, this app helps users manage their daily tasks efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h1>Testimonials</h1>
+        <div class="testimonial-cards">
+            <div class="testimonial">
+                <p>"Tanisha's designs are always innovative and user-friendly. She's a gem to work with!"</p>
+                <h4>- Teammate</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Her ability to transform ideas into visually stunning interfaces is unparalleled."</p>
+                <h4>- Client</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+        <div id="form-message"></div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>Copyright © 2024 Tanisha's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

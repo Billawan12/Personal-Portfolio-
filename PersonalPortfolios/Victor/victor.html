@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor's Portfolio</title>
+    <link rel="stylesheet" href="victor.css">
+    <script defer src="victor.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Victor</span></h1>
+            <p>Aspiring <strong>Data Scientist</strong> and <strong>Machine Learning Enthusiast</strong>.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h2><span class="counter" data-target="120">0</span></h2>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="stat">
+                    <h2><span class="counter" data-target="80">0</span></h2>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./VictorAssets/victorprofilepic.jpeg" alt="Victor">
+        </div>
+    </header>
+
+    <!-- Data Highlights Section -->
+    <section class="highlights">
+        <h2>Data Highlights</h2>
+        <div class="highlight-cards">
+            <div class="highlight">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Analysis</h3>
+                <p>Extracting actionable insights from complex datasets.</p>
+            </div>
+            <div class="highlight">
+                <i class="fas fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Optimizing database performance and scalability.</p>
+            </div>
+            <div class="highlight">
+                <i class="fas fa-brain"></i>
+                <h3>Machine Learning</h3>
+                <p>Building predictive models for business intelligence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="masonry-grid">
+            <div class="project-card">
+                <img src="./VictorAssets/dashboard.jpg" alt="Interactive Dashboard">
+                <h3>Interactive Dashboard</h3>
+                <p>Developed a Power BI dashboard for sales analytics.</p>
+            </div>
+            <div class="project-card">
+                <img src="./VictorAssets/customersegmentation.jpeg" alt="ML Model">
+                <h3>Customer Segmentation</h3>
+                <p>Created a Python-based machine learning model for customer segmentation.</p>
+            </div>
+            <div class="project-card">
+                <img src="./VictorAssets/datavisualization.jpg" alt="Data Visualization">
+                <h3>Data Visualization</h3>
+                <p>Designed interactive visuals to explain complex datasets.</p>
+            </div>
+            <div class="project-card">
+                <img src="./VictorAssets/APIIntegration.webp" alt="API Integration">
+                <h3>API Integration</h3>
+                <p>Developed scalable APIs for seamless system integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-grid">
+            <div class="skill">
+                <div class="circle" data-percent="90"></div>
+                <h3>Python</h3>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percent="80"></div>
+                <h3>Machine Learning</h3>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percent="75"></div>
+                <h3>SQL</h3>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percent="85"></div>
+                <h3>Power BI</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Have a question or want to work together? Feel free to drop a message below!</p>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+        <div id="form-message"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>© 2024 Victor's Portfolio. Designed with passion.</p>
+        </div>
+    </footer>
+</body>
+</html>
