@@ -15,9 +15,9 @@ PERSONAL PROFILES WEBSITE
 •  ChatBot: To Better and ease the user experience. 
 
 # Team Roles 
-•   Madut & Michelle: Styling and Css, creating the layout, color scheme, animations, and responsiveness.
-•   Victor & Tanisha: Structure and HTML, organizing the landing page, question display, and score section.
-•	  Moses & Jewel: JavaScript, implementing question logic, score calculation, feedback, and timer.
+•   Madut & Michelle: Styling and Css, creating the layout, color scheme and responsive design.
+•   Victor & Tanisha: Structure and HTML, organizing the landing page, creating profiles  
+•	  Moses & Jewel: JavaScript, implementing search functionality. 
 
 
 # Technologies Used
