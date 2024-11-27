@@ -1,5 +1,5 @@
 # Personal-Portfolio- 
-PERSONAL PROFILES WEBSITE
+This was a project for our APT1040(Intro to Web Development and Applications). We created simple and fun Personal Portfolios.
 
 # Description
 
