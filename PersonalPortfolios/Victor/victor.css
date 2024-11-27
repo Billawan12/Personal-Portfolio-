@@ -14,7 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 4em 1em;
-    background: linear-gradient(to right, #1e88e55a, #42a5f5);
+    background: linear-gradient(to right,  #42a5f5,  #1e88e55a);
     color: black;
     gap: 2em;
 }
