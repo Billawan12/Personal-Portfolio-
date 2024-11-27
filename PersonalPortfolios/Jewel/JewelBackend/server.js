@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 // OpenAI Client Setup
 const openai = new OpenAI({
-    apiKey: 'YOUR_OPENAI_API_KEY', // Replace with your OpenAI API Key
+    apiKey: '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', // Replace with your OpenAI API Key
 });
 
 // Chatbot Route
