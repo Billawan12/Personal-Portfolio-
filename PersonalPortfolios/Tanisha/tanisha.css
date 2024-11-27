@@ -208,6 +208,13 @@ color: #ffafbd;
     cursor: pointer;
     border-radius: 5px;
     transition: background 0.3s;
+    
+}
+.filter-buttons {
+    display: flex;
+    justify-content: center;  /* Aligns the buttons horizontally in the center */
+    align-items: center;      /* Aligns the buttons vertically in the center */
+    flex-wrap: wrap;          /* Ensures the buttons wrap if needed */
 }
 
 .filter-buttons button:hover {
