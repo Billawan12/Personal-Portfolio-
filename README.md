@@ -17,7 +17,7 @@ PERSONAL PROFILES WEBSITE
 # Team Roles 
 •   Madut & Michelle: Styling and Css, creating the layout, color scheme, animations, and responsiveness.
 •   Victor & Tanisha: Structure and HTML, organizing the landing page, question display, and score section.
-•	Moses & Jewel: JavaScript, implementing question logic, score calculation, feedback, and timer.
+•	  Moses & Jewel: JavaScript, implementing question logic, score calculation, feedback, and timer.
 
 
 # Technologies Used
