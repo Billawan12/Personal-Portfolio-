@@ -124,3 +124,19 @@ footer {
         padding: 10px;
     }
 }
+/* Additional Enhancements */
+/* Smooth scrolling for better UX */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Added hover effect for footer */
+footer:hover {
+    background: linear-gradient(to right, #ffc3a0, #ffafbd);
+    color: #fefefe;
+}
+
+/* Profile text hover effect */
+.profile:hover .info h2 {
+    color: #3f51b5;
+    transition: color 0.3s ease;
